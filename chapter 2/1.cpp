@@ -4,6 +4,6 @@
 using namespace std;
 int main ()
 {
-	cout << "Oleksii Savochkin\n Nikolaev" << std::endl;
+	cout << "Anonimous\n Mycity" << std::endl;
 	cin.get();
 }
