@@ -1,0 +1,16 @@
+1.	What does procedural versus object-oriented programming mean?
+
+		Unlike procedural programming, which emphasizes algorithms, OOP emphasizes the data. Rather than try to fit a problem to the procedural approach of a language, OOP attempts to fit the language to the problem.The idea is to design data forms that correspond to the essential features of a problem.
+
+2.	How C++ adds object-oriented concepts to the C language?
+
+		In C++, a class is a specification describing such a new data form, and an object is a particular data structure constructed according to that plan.
+
+
+3.	How C++ adds generic programming concepts to the C language?
+
+		It shares with OOP the aim of making it simpler to reuse code and the technique of abstracting general concepts. But whereas OOP emphasizes the data aspect of programming, generic programming emphasizes independence from a particular data type. And its focus is different.
+		OOP is a tool for managing large projects, whereas generic programming provides tools for performing common tasks, such as sorting data or merging lists.The term generic refers to code that is type independent.
+		C++ data representations come in many types— integers, numbers with fractional parts, characters, strings of characters, and user-defined compound structures of several types.
+
+
