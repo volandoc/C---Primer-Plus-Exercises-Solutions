@@ -13,7 +13,7 @@ void ShowMyTime(int, int);
 int main ()
 {
 	int h,m;
-	cout << "Enter the number of light hours: ";
+	cout << "Enter the number of hours: ";
 	cin >> h;
 	cout << "Enter the number of minutes: ";
 	cin >> m;
