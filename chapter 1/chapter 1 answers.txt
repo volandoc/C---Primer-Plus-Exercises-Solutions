@@ -12,5 +12,3 @@
 		It shares with OOP the aim of making it simpler to reuse code and the technique of abstracting general concepts. But whereas OOP emphasizes the data aspect of programming, generic programming emphasizes independence from a particular data type. And its focus is different.
 		OOP is a tool for managing large projects, whereas generic programming provides tools for performing common tasks, such as sorting data or merging lists.The term generic refers to code that is type independent.
 		C++ data representations come in many types— integers, numbers with fractional parts, characters, strings of characters, and user-defined compound structures of several types.
-
-
