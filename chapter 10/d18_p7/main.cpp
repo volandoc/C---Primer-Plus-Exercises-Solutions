@@ -12,13 +12,12 @@ Write a Plorg class declaration ( including data members and member function pro
 */
 #include "header.h"
 
-int main()
-{
-	Plorg my_plog;
-	my_plog.showPlorg();
-	my_plog.setCI(51);
+int main() {
+    Plorg my_plog;
+    my_plog.showPlorg();
+    my_plog.setCI(51);
 
-	Plorg my_plog2("NewPlorg", 159);
-	my_plog2.showPlorg();
-	system("pause");
+    Plorg my_plog2("NewPlorg", 159);
+    my_plog2.showPlorg();
+    system("pause");
 }

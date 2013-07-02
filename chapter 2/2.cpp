@@ -3,14 +3,13 @@
 #include <iostream>
 using namespace std;
 
-int main ()
-{
+int main () {
 
-	float furlongs;
-	cout << "Please, enter distance in furlongs (float value):" << std::endl;
-	cin >> furlongs;
-	cout << furlongs << " furlongs is about " << furlongs*220 << " yards.";
+    float furlongs;
+    cout << "Please, enter distance in furlongs (float value):" << std::endl;
+    cin >> furlongs;
+    cout << furlongs << " furlongs is about " << furlongs*220 << " yards.";
 
-	cin.get();
-	cin.get();
+    cin.get();
+    cin.get();
 }

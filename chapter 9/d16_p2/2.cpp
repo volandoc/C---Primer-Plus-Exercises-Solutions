@@ -11,27 +11,24 @@ using namespace std;
 // function prototype
 void strcount(const string & str);
 
-int main()
-{
+int main() {
     string input;
 
     cout << "Enter a line:\n";
-    while (getline(cin, input)&& input != "")
-    {
+    while (getline(cin, input)&& input != "") {
         cout << "Enter next line (empty line to quit):\n";
-		strcount(input);
+        strcount(input);
     }
     cout << "\nBye\n";
 
-	system("pause");
+    system("pause");
     return 0;
 }
 
-void strcount(const string & str)
-{
+void strcount(const string & str) {
     static int total = 0;        // static local variable
 
     cout << "\"" << str <<"\" contains " << str.length() << " characters\n";
-	total += str.length();
+    total += str.length();
     cout << total << " characters total\n";
 }

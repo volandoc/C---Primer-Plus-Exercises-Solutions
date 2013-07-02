@@ -14,23 +14,20 @@ Then, the program should find the sum of the array contents and report the total
 #include <array>
 #include <string>
 using namespace std;
-int main ()
-{	
-	array <string, 12> month = {"january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december" };
-	array <int, 12> sales;
+int main () {
+    array <string, 12> month = {"january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december" };
+    array <int, 12> sales;
 
-	for (int i = 0; i < 12 ; i++ )
-	{
-		cout << "Please, enter sales in " << month[i] << " = ";
-		cin >> sales[i];
-	}
-	
-	int sum = 0;
-	for (int i = 0; i < 12 ; i++ )
-	{
-		sum += sales[i];
-	}
+    for (int i = 0; i < 12 ; i++ ) {
+        cout << "Please, enter sales in " << month[i] << " = ";
+        cin >> sales[i];
+    }
 
-	cout << "Average sales per year = " << sum << endl; 
-	system("pause");
+    int sum = 0;
+    for (int i = 0; i < 12 ; i++ ) {
+        sum += sales[i];
+    }
+
+    cout << "Average sales per year = " << sum << endl;
+    system("pause");
 }

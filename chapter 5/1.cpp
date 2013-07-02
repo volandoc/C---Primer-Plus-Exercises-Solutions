@@ -9,21 +9,19 @@ the program should report that the sum of all the integers from 2 through 9 is 4
 
 #include <iostream>
 
-int main ()
-{
-	using namespace std;
-	int i1, i2, i3 = 0;
-	cout << "Enter first integer = ";
-	cin >> i1;
-	cout << "Enter second integer = ";
-	cin >> i2;
+int main () {
+    using namespace std;
+    int i1, i2, i3 = 0;
+    cout << "Enter first integer = ";
+    cin >> i1;
+    cout << "Enter second integer = ";
+    cin >> i2;
 
-	for (int i = i1; i <= i2; i++)
-	{
-		i3 += i;
-	}
+    for (int i = i1; i <= i2; i++) {
+        i3 += i;
+    }
 
-	cout << "Your sum = " << i3 << endl;
+    cout << "Your sum = " << i3 << endl;
 
-	system("pause");
+    system("pause");
 }

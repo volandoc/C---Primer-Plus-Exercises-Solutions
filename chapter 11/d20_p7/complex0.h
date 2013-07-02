@@ -27,6 +27,4 @@ public:
         return co1 * n;
     };
     friend complex operator ~ (const complex & co);
-
-
 };

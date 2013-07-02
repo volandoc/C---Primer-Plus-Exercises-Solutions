@@ -8,24 +8,21 @@ converting each uppercase character to lowercase, and vice versa. (Don't forget 
 #include <string>
 #include <cctype>
 
-int main ()
-{
-	using namespace std;
-	cout << "Enter text for lowercase output, and type @"
-		" to terminate input.\n";
-	char ch, corrected;  
+int main () {
+    using namespace std;
+    cout << "Enter text for lowercase output, and type @"
+         " to terminate input.\n";
+    char ch, corrected;
 
-	cin.get(ch);                // get first character
-	while (ch != '@')            // test for sentinel
-	{
-		if(!isdigit(ch))    // is it a digit?
-			{
-				corrected = tolower(ch);
-				cout << corrected;
-			}
-		cin.get(ch);            // get next character
-	}
-	cout << "Program terminated.\n\n";
+    cin.get(ch);                // get first character
+    while (ch != '@') {          // test for sentinel
+        if(!isdigit(ch)) {  // is it a digit?
+            corrected = tolower(ch);
+            cout << corrected;
+        }
+        cin.get(ch);            // get next character
+    }
+    cout << "Program terminated.\n\n";
 
-	system("pause");
+    system("pause");
 }

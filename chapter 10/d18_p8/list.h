@@ -19,7 +19,7 @@ You can implement the list as an array or, if you're familiar with the data type
 But the public interface should not depend on your choice.
 
 That is, the public interface should not have array indices, pointers to nodes, and so on.
-It should be expressed in the general concepts of creating a list, adding an item to the list, and so on. 
+It should be expressed in the general concepts of creating a list, adding an item to the list, and so on.
 
 The usual way to handle visiting each item and performing an action is to use a function that takes a function pointer as an argument:
 void visit(void (*pf)(Item &));
@@ -29,33 +29,33 @@ The visit() function applies this function to each item in the list.
 You can use the Stack class as a general guide.
 */
 struct customer {
-	std::string fullname;
-	double payment;
+    std::string fullname;
+    double payment;
 };
 
 typedef struct customer Item;
 
 class List {
 private:
-	enum {MAX = 10};
-	Item stack_[MAX];
-	int top_;
+    enum {MAX = 10};
+    Item stack_[MAX];
+    int top_;
 public:
-	List();
+    List();
 
-	bool isempty() const;
-	bool isfull() const;
+    bool isempty() const;
+    bool isfull() const;
 
-	// display all information in stack
-	void showList() const;
+    // display all information in stack
+    void showList() const;
 
 
-	// pushes one item to list
-	bool add(const Item & item);
+    // pushes one item to list
+    bool add(const Item & item);
 
-	void changeName (const int id);
+    void changeName (const int id);
 
-	void changeVol (const int id);
+    void changeVol (const int id);
 
-	void showItem (const int id);
+    void showItem (const int id);
 };

@@ -20,53 +20,46 @@ using namespace std;
 
 const int Years = 3;
 const int Months = 12;
-int main ()
-{	
-	const string month[Months] =
-	{
-		"January",
-		"February",
-		"March",
-		"April",
-		"May",
-		"June",
-		"July",
-		"August",
-		"September",
-		"October",
-		"November",
-		"December"
-	};
-	
-	
-	int sales [Years] [Months];
+int main () {
+    const string month[Months] = {
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December"
+    };
 
-	for (int i = 0; i < Years ; i++ )
-	{
-		for (int j = 0; j < Months; j++)
-		{
-			cout << "Please, enter sales in " << i+1 << " year, and "
-				 << month[j] << " = ";
-			cin >> sales[i][j];
-		}
-	}
 
-	int sum[3];
-	for (int i = 0; i < Years ; i++ )
-	{
-		int sum_tmp = 0;
-		for ( int j = 0; j < Months; j++)
-		{
-			sum_tmp += sales[i][j];
-		}
-		sum[i] = sum_tmp;
-	}
+    int sales [Years] [Months];
 
-	for (int i = 0; i < Years ; i++ )
-	{
-		cout << "Average sales per year " << i+1 << " = " << sum[i] << endl; 
-	}
-	cout << "Average sales per year = " << sum[0] + sum [1] + sum[2] << endl; 
+    for (int i = 0; i < Years ; i++ ) {
+        for (int j = 0; j < Months; j++) {
+            cout << "Please, enter sales in " << i+1 << " year, and "
+                 << month[j] << " = ";
+            cin >> sales[i][j];
+        }
+    }
 
-	system("pause");
+    int sum[3];
+    for (int i = 0; i < Years ; i++ ) {
+        int sum_tmp = 0;
+        for ( int j = 0; j < Months; j++) {
+            sum_tmp += sales[i][j];
+        }
+        sum[i] = sum_tmp;
+    }
+
+    for (int i = 0; i < Years ; i++ ) {
+        cout << "Average sales per year " << i+1 << " = " << sum[i] << endl;
+    }
+    cout << "Average sales per year = " << sum[0] + sum [1] + sum[2] << endl;
+
+    system("pause");
 }

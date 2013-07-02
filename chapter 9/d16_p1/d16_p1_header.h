@@ -1,9 +1,8 @@
 // golf.h -- for pe9-1.cpp
 const int Len = 40;
-struct golf
-{
-	char fullname[Len];
-	int handicap;
+struct golf {
+    char fullname[Len];
+    int handicap;
 };
 // non-interactive version:
 // function sets golf structure to provided name, handicap

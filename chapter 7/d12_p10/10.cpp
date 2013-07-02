@@ -8,7 +8,7 @@ For example,suppose you have this definition for the add() function:
 
 double add(double x, double y)
 {
-	return x + y;
+    return x + y;
 }
 
 Then, the function call in the following would cause calculate()to pass the values 2.5 and 10.4 to the add() function and then return the add() return value (12.9):
@@ -34,59 +34,52 @@ double add(double x, double y);
 double subtract(double x, double y);
 double multiply(double x, double y);
 double calculate(double x, double y, double (*pf) (double, double));
-int main()
-{
-	double x,y;
-/*
-  // First part of solution - using func call
-	cout << "Please enter x and y: ";
-	while ((cin >> x >> y))
-	{
-		cin.clear();
-		while ( cin.get() != '\n')
-			continue;
-		cout << x << " + " << y << " = " << calculate(x, y, add) << endl;
-		cout << x << " - " << y << " = " << calculate(x, y, subtract) << endl;
-		cout << x << " * " << y << " = " << calculate(x, y, multiply) << endl;
-		cout << "Please enter new x and y: ";
-	}*/
-	// Second part of solution - using pointer array func call
-	cout << "Now with pointer array: \n";
-	double (*pm[3]) (double, double) = {add, subtract, multiply};
-	cout << "Please enter x and y: ";
-	while ((cin >> x >> y))
-	{
-		cin.clear();
-		while ( cin.get() != '\n')
-			continue;
-		for (int i=0; i < 3; i++ )
-		{
-			cout << "func # " << i+1 << " = " << calculate(x, y, pm[i]) << endl;
-		}
-		cout << "Please enter new x and y: ";
-	}
-	cout << "Done\n";
-	system("pause");
-	return 0;
+int main() {
+    double x,y;
+    /*
+      // First part of solution - using func call
+        cout << "Please enter x and y: ";
+        while ((cin >> x >> y))
+        {
+            cin.clear();
+            while ( cin.get() != '\n')
+                continue;
+            cout << x << " + " << y << " = " << calculate(x, y, add) << endl;
+            cout << x << " - " << y << " = " << calculate(x, y, subtract) << endl;
+            cout << x << " * " << y << " = " << calculate(x, y, multiply) << endl;
+            cout << "Please enter new x and y: ";
+        }*/
+    // Second part of solution - using pointer array func call
+    cout << "Now with pointer array: \n";
+    double (*pm[3]) (double, double) = {add, subtract, multiply};
+    cout << "Please enter x and y: ";
+    while ((cin >> x >> y)) {
+        cin.clear();
+        while ( cin.get() != '\n')
+            continue;
+        for (int i=0; i < 3; i++ ) {
+            cout << "func # " << i+1 << " = " << calculate(x, y, pm[i]) << endl;
+        }
+        cout << "Please enter new x and y: ";
+    }
+    cout << "Done\n";
+    system("pause");
+    return 0;
 }
 
 
-double add(double x, double y)
-{
-	return x + y;
+double add(double x, double y) {
+    return x + y;
 }
 
-double subtract(double x, double y)
-{
-	return x - y;
+double subtract(double x, double y) {
+    return x - y;
 }
 
-double multiply(double x, double y)
-{
-	return x * y;
+double multiply(double x, double y) {
+    return x * y;
 }
 
-double calculate(double x, double y, double (*pf) (double, double))
-{
-	return pf(x,y);
+double calculate(double x, double y, double (*pf) (double, double)) {
+    return pf(x,y);
 }
